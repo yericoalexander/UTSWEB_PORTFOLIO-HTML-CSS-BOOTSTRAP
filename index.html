@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTS WEB - Portfolio</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" href="/images/favicon.png"> <!-- Tautan ke ikon favicon -->
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <!-- Tautan ke Bootstrap 5 CSS dari CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Tautan ke Font Awesome CSS dari CDN -->
+
+    <!-- Link CSS (Custom) -->
+    <link rel="stylesheet" href="/css/style.css"><!-- Tautan ke berkas CSS kustom "style.css" di server lokal -->
+    <link rel="stylesheet" href="/css/responsive-style.css">
+    <!-- Tautan ke berkas CSS kustom "responsive-style.css" di server lokal -->
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="90">
+
+    <!-- Navbar -->
+    <header class="header_wrapper">
+        <!-- Membuat header dengan kelas "header_wrapper" -->
+
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <!-- Membuat elemen navigasi dengan kelas "navbar" yang dapat diperluas pada perangkat berukuran besar (lg) dan tetap pada bagian atas layar (fixed-top) -->
+
+            <div class="container">
+                <!-- Membungkus konten navbar dalam elemen div dengan kelas "container" untuk mengatur tata letak -->
+
+                <a class="navbar-brand" href="#">
+                    <!-- Menambahkan logo sebagai tautan ke halaman utama -->
+                    <img src="/images/logo-word.png" class="img-fluid" alt="logo">
+                    <!-- Menampilkan logo dengan gambar yang responsif (img-fluid) -->
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- Tombol yang akan muncul pada perangkat seluler untuk membuka/menutup menu -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                    <!-- Menambahkan ikon "hamburger" sebagai ikon toggle navbar -->
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <!-- Membuat area yang akan mengandung menu navbar yang akan muncul atau disembunyikan saat tombol toggle di klik -->
+
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <!-- Membuat daftar menu navbar -->
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Beranda</a>
+                            <!-- Menu "Beranda" yang ditandai sebagai halaman aktif -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Tentang</a>
+                            <!-- Menu "Tentang" -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Layanan</a>
+                            <!-- Menu "Layanan" -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                            <!-- Menu "Portfolio" -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Kontak</a>
+                            <!-- Menu "Kontak" -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Navbar -->
+
+    <!-- Banner Section -->
+    <section id="home" class="banner_wrapper">
+        <!-- Membuat bagian banner dengan ID "home" dan kelas "banner_wrapper" -->
+
+        <div class="container">
+            <!-- Membungkus konten dalam sebuah elemen div dengan kelas "container" untuk mengatur tata letak -->
+
+            <div class="row">
+                <!-- Membuat baris (row) untuk menempatkan konten -->
+
+                <div class="col-lg-7 order-lg-1 order-2 banner-content">
+                    <!-- Kolom dengan lebar besar (lg) 7, diurutkan pertama pada layar besar dan kedua pada layar kecil (order-lg-1 order-2) -->
+                    <h1 class="text-uppercase"> Yerico Alexander</h1>
+                    <!-- Judul utama dengan teks kapital semua huruf -->
+                    <h5>Fullstack Developer</h5>
+                    <!-- Subjudul yang menunjukkan peran sebagai Fullstack Developer -->
+                    <div class="mt-5">
+                        <!-- Margin atas sebesar 5 unit (mt-5) -->
+                        <a href="#about" class="main-btn primary-btn">SELENGKAPNYA ↴</a>
+                        <!-- Tombol dengan kelas "main-btn primary-btn" untuk mengarahkan ke bagian "Tentang" dengan tautan hash -->
+                        <a target="_blank" href="https://github.com/yericoalexander"
+                            class="main-btn secondary-btn ms-4">Github</a>
+                        <!-- Tombol dengan kelas "main-btn secondary-btn" yang membuka tautan Github di tab atau jendela baru -->
+                    </div>
+                </div>
+
+                <div class="col-lg-5 order-lg-2 order-1">
+                    <!-- Kolom dengan lebar besar (lg) 5, diurutkan kedua pada layar besar dan pertama pada layar kecil (order-lg-2 order-1) -->
+                    <div class="top-right-img">
+                        <!-- Bagian kanan atas dengan kelas "top-right-img" -->
+                        <img src="/images/home-img.png" alt="img" class="img-fluid">
+                        <!-- Menampilkan gambar dengan atribut "img-fluid" yang membuatnya responsif -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner -->
+
+
+    <!-- About Section -->
+    <section id="about" class="about_wrapper">
+        <!-- Membuat bagian "About Section" dengan ID "about" dan kelas "about_wrapper" -->
+
+        <div class="container">
+            <!-- Membungkus konten dalam sebuah elemen div dengan kelas "container" untuk mengatur tata letak -->
+
+            <div class="row align-items-center">
+                <!-- Membuat baris (row) dan mengatur konten agar berada di tengah (align-items-center) -->
+
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <!-- Kolom dengan lebar besar (lg) 7, digunakan pada layar besar, dengan margin bawah 4 unit (mb-4 mb-lg-0) -->
+                    <img src="/images/about-img.png" alt="about" class="img-fluid">
+                    <!-- Menampilkan gambar "about-img.png" yang responsif -->
+                </div>
+
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <!-- Kolom dengan lebar besar (lg) 5, digunakan pada layar besar, dengan margin bawah 4 unit (mb-4 mb-lg-0) -->
+                    <h3 class="text-uppercase">Tentang Saya</h3>
+                    <!-- Judul dengan teks kapital semua huruf -->
+                    <p>Saya lahir di kota Purwokerto, 5 September 2006. Berawal dari Sekolah SMP Mawar Saron Taman
+                        Royal, Jakarta, dan sekarang bersekolah di SMK Telkom Purwokerto dengan jurusan PPLG
+                        (Pengembangan Perangkat Lunak dan Gim).</p>
+                    <!-- Paragraf dengan informasi tentang diri sendiri -->
+                    <p class="gri">dan berikut Skill-skill yang sedang saya kembangkan:</p>
+                    <!-- Paragraf dengan teks abu-abu -->
+                    <div class="about-gri">
+                        <!-- Bagian "about-gri" yang berisi daftar skill -->
+                        <div class="about-in">
+                            <h5>1. Problem Solving</h5>
+                        </div>
+                        <!-- Skill pertama -->
+                        <div class="about-in">
+                            <h5>2. Creative Idea</h5>
+                        </div>
+                        <!-- Skill kedua -->
+                        <div class="about-in">
+                            <h5>3. Search a lot</h5>
+                        </div>
+                        <!-- Skill ketiga -->
+                        <div class="about-in">
+                            <h5>4. Good Quality of Code</h5>
+                        </div>
+                        <!-- Skill keempat -->
+                    </div>
+                    <a target="_blank"
+                        href="https://api.whatsapp.com/send/?phone=%2B6287883203483&amp;text&amp;type=phone_number&amp;app_absent=0"
+                        class="main-btn primary-btn mt-4">Hubungi Saya</a>
+                    <!-- Tombol dengan tautan yang membuka aplikasi WhatsApp di tab atau jendela baru -->
+                </div>
+            </div>
+
+            <div class="row justify-content-center pt-5">
+                <!-- Membuat baris (row) dengan konten yang berada di tengah (justify-content-center) dengan margin atas sebesar 5 unit (pt-5) -->
+
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <!-- Kolom dengan lebar besar (lg) 6, digunakan pada layar besar, dengan margin bawah 4 unit (mb-4 mb-lg-0) -->
+                    <div class="row">
+                        <!-- Membuat baris (row) dalam kolom -->
+
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <!-- Kolom dengan lebar medium (md) 4 dan kecil (sm) 6, dengan margin bawah 4 unit (mb-4) -->
+                            <div class="single-logo-item">
+                                <!-- Elemen yang menampilkan logo klien -->
+                                <img src="/images/client-img/logo-html.png" alt="" class="img-fluid">
+                                <!-- Menampilkan gambar logo HTML yang responsif -->
+                            </div>
+                        </div>
+
+                        <!-- ... (sama seperti di atas, tetapi untuk logo lainnya) -->
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo-item">
+                                <img src="/images/client-img/logo-css.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo-item">
+                                <img src="/images/client-img/logo-js.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo-item">
+                                <img src="/images/client-img/logo-figma.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo-item">
+                                <img src="/images/client-img/logo-react.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo-item">
+                                <img src="/images/client-img/logo-bootstrap.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo-item">
+                                <img src="/images/client-img/logo-laravel.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo-item">
+                                <img src="/images/client-img/logo-php.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo-item">
+                                <img src="/images/client-img/logo-mysql.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offset-lg-2 col-lg-4 col-md-10">
+                    <!-- Kolom dengan lebar besar (lg) 4, digunakan pada layar besar, dengan offset besar (offset-lg-2), dan lebar medium (md) 10 -->
+                    <div class="client-info">
+                        <!-- Bagian "client-info" yang berisi informasi pengalaman dan kontak -->
+                        <div class="d-flex">
+                            <!-- Mengatur konten dalam layout flexbox (d-flex) -->
+                            <span class="large">10+</span>
+                            <!-- Tampilan angka besar -->
+                            <span class="smll">Pengalaman <br>Project <br> Web</span>
+                            <!-- Tampilan teks kecil -->
+                        </div>
+                        <div class="call-now d-flex py-4">
+                            <!-- Mengatur konten dalam layout flexbox (d-flex) dengan padding atas sebesar 4 unit (py-4) -->
+                            <div>
+                                <span class="fa fa-phone-alt"></span>
+                                <!-- Menampilkan ikon telepon -->
+                            </div>
+                            <div class="ms-4">
+                                <!-- Margin kiri sebesar 4 unit (ms-4) -->
+                                <p>Hubungi Saya</p>
+                                <!-- Paragraf dengan teks "Hubungi Saya" -->
+                                <h5><a target="_blank"
+                                        href="https://api.whatsapp.com/send/?phone=%2B6287883203483&amp;text&amp;type=phone_number&amp;app_absent=0"
+                                        class="fs">(+62)-878-8320-3483</a></h5>
+                                <!-- Tautan yang membuka aplikasi WhatsApp di tab atau jendela baru -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About -->
+
+
+    <!-- Services Section -->
+    <section id="services" class="services_wrapper">
+        <!-- Membuat bagian "Services Section" dengan ID "services" dan kelas "services_wrapper" -->
+
+        <div class="container">
+            <!-- Membungkus konten dalam sebuah elemen div dengan kelas "container" untuk mengatur tata letak -->
+
+            <div class="row">
+                <!-- Membuat baris (row) untuk menampilkan layanan-layanan -->
+
+                <div class="col-sm-12 text-center mb-5">
+                    <!-- Kolom dengan lebar kecil (sm) 12 dan margin bawah sebesar 5 unit (mb-5) -->
+                    <h2>LAYANAN</h2>
+                    <!-- Judul "LAYANAN" -->
+                    <p>Dibawah ini ada beberapa layanan yang bisa saya berikan kepada anda
+                        <br class="d-none d-lg-block">
+                        Berikut layanan-nya ↴
+                    </p>
+                    <!-- Paragraf dengan deskripsi layanan -->
+                </div>
+
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <!-- Kolom dengan lebar besar (lg) 3, digunakan pada layar besar, dan lebar kecil (sm) 6, digunakan pada layar kecil, dengan margin bawah sebesar 4 unit (mb-4) -->
+                    <div class="card rounded-0 border-0 text-center py-5 px-3">
+                        <!-- Kartu layanan dengan border dan teks di tengah -->
+                        <div>
+                            <img src="/images/services-img/1.png" alt="card" class="img-fluid">
+                            <!-- Menampilkan gambar layanan -->
+                        </div>
+                        <h5 class="text-uppercase mt-4 mb-3">WEB DEVELOPMENT</h5>
+                        <!-- Judul layanan "WEB DEVELOPMENT" dengan teks kapital semua huruf -->
+                        <p>Saya bisa memberi layanan yang bisa membantu untuk development website anda</p>
+                        <!-- Deskripsi layanan -->
+                    </div>
+                </div>
+
+                <!-- ... (sama seperti di atas, tetapi untuk layanan lainnya) -->
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded-0 border-0 text-center py-5 px-3">
+                        <div>
+                            <img src="/images/services-img/2.png" alt="card" class="img-fluid">
+                        </div>
+                        <h5 class="text-uppercase mt-4 mb-3">WEB DESIGN</h5>
+                        <p>Saya bisa memberi layanan yang bisa membantu untuk mendesign website anda</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded-0 border-0 text-center py-5 px-3">
+                        <div>
+                            <img src="/images/services-img/3.png" alt="card" class="img-fluid">
+                        </div>
+                        <h5 class="text-uppercase mt-4 mb-3">UI/UX DESIGN</h5>
+                        <p>Saya bisa memberi layanan yang bisa membantu untuk menentukan design yang anda inginkan</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded-0 border-0 text-center py-5 px-3">
+                        <div>
+                            <img src="/images/services-img/4.png" alt="card" class="img-fluid">
+                        </div>
+                        <h5 class="text-uppercase mt-4 mb-3">DEKSTOP APP</h5>
+                        <p>Saya bisa memberi layanan yang bisa membantu anda untuk membuat aplikasi dekstop</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Services -->
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio_wrapper">
+        <!-- Membuat bagian "Portfolio Section" dengan ID "portfolio" dan kelas "portfolio_wrapper" -->
+
+        <div class="container">
+            <!-- Membungkus konten dalam sebuah elemen div dengan kelas "container" untuk mengatur tata letak -->
+
+            <div class="row">
+                <!-- Membuat baris (row) untuk menampilkan portofolio -->
+
+                <div class="col-sm-12 text-left mb-md-5 mb-2">
+                    <!-- Kolom dengan lebar kecil (sm) 12, dengan margin bawah sesuai ukuran pada berbagai layar -->
+                    <h2 class="text-uppercase">Portfolio <br> WEB DESIGN, UI/UX DESIGN DAN LAIN-LAIN</h2>
+                    <!-- Judul "Portfolio" dengan deskripsi tentang jenis desain web -->
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Baris untuk menampilkan tab navigasi -->
+
+                <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
+                    <!-- Membuat daftar tab navigasi dengan ID "pills-tab" -->
+
+                    <li class="nav-item" role="presentation">
+                        <!-- Item tab navigasi pertama -->
+                        <button class="nav-link active" id="pills-one-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-one" type="button" role="tab" aria-controls="pills-one"
+                            aria-selected="true">Popular</button>
+                        <!-- Tombol tab aktif dengan label "Popular" -->
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <!-- Item tab navigasi kedua -->
+                        <button class="nav-link" id="pills-two-tab" data-bs-toggle="pill" data-bs-target="#pills-two"
+                            type="button" role="tab" aria-controls="pills-two" aria-selected="false">Latest</button>
+                        <!-- Tombol tab dengan label "Latest" -->
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <!-- Item tab navigasi ketiga -->
+                        <button class="nav-link" id="pills-three-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-three" type="button" role="tab" aria-controls="pills-three"
+                            aria-selected="false">Upcoming</button>
+                        <!-- Tombol tab dengan label "Upcoming" -->
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="pills-tabContent">
+                    <!-- Konten tab yang akan ditampilkan berdasarkan tab yang aktif -->
+
+                    <div class="tab-pane fade show active" id="pills-one" role="tabpanel"
+                        aria-labelledby="pills-one-tab">
+                        <!-- Konten tab pertama yang aktif -->
+
+                        <div class="row">
+                            <!-- Baris untuk menampilkan portofolio yang populer -->
+
+                            <div class="col-lg-4 col-sm-6">
+                                <!-- Kolom dengan lebar besar (lg) 4 dan lebar kecil (sm) 6 untuk tampilan pada berbagai layar -->
+                                <div class="portfolio-img">
+                                    <!-- Elemen untuk menampilkan gambar portofolio -->
+                                    <img src="/images/portfolio/website1.png" alt="" class="img-fluid w-100">
+                                    <!-- Gambar portofolio dengan kelas "img-fluid" untuk tampilan responsif -->
+                                    <div class="overlay"><a target="_blank" href="https://github.com/yericoalexander"><i
+                                                class="fab fa-github-square">
+                                                <p class="overlay-p">Github</p>
+                                            </i></a></div>
+                                    <!-- Overlay dengan ikon GitHub dan teks "Github" -->
+                                </div>
+                                <h5 class="mb-0 mt-4">Apoteker Online</h5>
+                                <!-- Judul portofolio "Apoteker Online" -->
+                                <p>Website Landing Page Design Apoteker Online</p>
+                                <!-- Deskripsi portofolio -->
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="portfolio-img">
+                                    <img src="/images/portfolio/website2.webp" alt="" class="img-fluid w-100">
+                                    <div class="overlay"><a target="_blank" href="https://github.com/yericoalexander"><i
+                                                class="fab fa-github-square">
+                                                <p class="overlay-p">Github</p>
+                                            </i></a></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">Furniture Store</h5>
+                                <p>Website Landing Page Design Furniture Store</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="portfolio-img">
+                                    <img src="/images/portfolio/website3.png" alt="" class="img-fluid w-100">
+                                    <div class="overlay"><a target="_blank" href="https://github.com/yericoalexander"><i
+                                                class="fab fa-github-square">
+                                                <p class="overlay-p">Github</p>
+                                            </i></a></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">Travel Website</h5>
+                                <p>Website Landing Page Design Travel</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-two" role="tabpanel" aria-labelledby="pills-two-tab">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="portfolio-img">
+                                    <img src="/images/portfolio/website4.png" alt="" class="img-fluid w-100">
+                                    <div class="overlay"><a target="_blank" href="https://github.com/yericoalexander"><i
+                                                class="fab fa-github-square">
+                                                <p class="overlay-p">Github</p>
+                                            </i></a></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">Portoflio Website</h5>
+                                <p>Website Landing Page Design Portoflio</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="portfolio-img">
+                                    <img src="/images/portfolio/website5.png" alt="" class="img-fluid w-100">
+                                    <div class="overlay"><a target="_blank" href="https://github.com/yericoalexander"><i
+                                                class="fab fa-github-square">
+                                                <p class="overlay-p">Github</p>
+                                            </i></a></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">Suwit Jawa 2.0</h5>
+                                <p>Website Design SUWIT JAWA 2.0</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-three" role="tabpanel" aria-labelledby="pills-three-tab">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="portfolio-img">
+                                    <img src="/images/portfolio/website6.png" alt="" class="img-fluid w-100">
+                                    <div class="overlay"><a target="_blank" href="https://github.com/yericoalexander"><i
+                                                class="fab fa-github-square">
+                                                <p class="overlay-p">Github</p>
+                                            </i></a></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">Pharmix Website</h5>
+                                <p>Website Design Pharmix ( Segera )</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio -->
+
+    <!-- Footer Section -->
+    <section id="contact" class="footer_wrapper mt-3 mt-md-0">
+        <!-- Membuat bagian "Footer Section" dengan ID "contact" dan kelas "footer_wrapper" serta margin atas yang berbeda sesuai ukuran layar -->
+
+        <div class="container">
+            <!-- Membungkus konten dalam elemen div dengan kelas "container" untuk mengatur tata letak -->
+
+            <div class="row">
+                <!-- Baris untuk menampilkan konten footer -->
+
+                <div class="col-12 newsletter text-center px-4">
+                    <!-- Kolom dengan lebar penuh (col-12) untuk menampilkan newsletter dan teks berikutnya -->
+
+                    <div>
+                        <h3 class="text-white">Mari Berkerja Sama</h3>
+                        <!-- Judul "Mari Berkerja Sama" dengan teks berwarna putih -->
+                        <p class="text-white">Kirimkan email anda dibawah ini untuk merekrut!</p>
+                        <!-- Teks dengan warna putih -->
+                        <form action="" class="row g-3 justify-content-center mt-4">
+                            <!-- Formulir dengan tata letak grid yang disusun dalam baris dengan penjelasan lebih lanjut -->
+
+                            <div class="col col-sm-6 col-lg-4">
+                                <!-- Kolom dengan lebar berbeda sesuai ukuran layar -->
+                                <input type="email" class="form-control" placeholder="Email Address">
+                                <!-- Input email dengan kelas "form-control" dan placeholder -->
+                            </div>
+                            <div class="col col-auto">
+                                <!-- Kolom dengan lebar otomatis -->
+                                <button type="submit" class="main-btn secondary-btn border-white mb-3">Get
+                                    Started</button>
+                                <!-- Tombol "Get Started" dengan kelas-kelas tertentu -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menutup kontainer pertama -->
+
+        <div class="container mt-5">
+            <!-- Membuat kontainer kedua dengan margin atas -->
+
+            <div class="row align-items-center justify-content-center">
+                <!-- Baris dengan elemen yang berada di tengah secara horizontal dan vertikal -->
+
+                <div class="col-12 text-center">
+                    <!-- Kolom dengan lebar penuh dan teks berada di tengah -->
+
+                    <div class="footer-logo mb-3 mb-md-0">
+                        <!-- Elemen untuk menampilkan logo footer -->
+                        <img src="/images/logo-word.png" alt="footer-logo" class="img-fluid">
+                        <!-- Gambar logo footer dengan kelas "img-fluid" untuk tampilan responsif -->
+                    </div>
+
+                    <div class="my-4 social-icons">
+                        <!-- Elemen untuk menampilkan ikon media sosial -->
+
+                        <h5>Hubungi Saya</h5>
+                        <!-- Judul "Hubungi Saya" -->
+                        <h5>↓</h5>
+                        <!-- Tanda panah ke bawah -->
+                        <ul class="list-unstyled d-flex justify-content-center align-items-center">
+                            <!-- Daftar ikon media sosial yang ditampilkan dalam format daftar tanpa tanda bulet -->
+                            <li><a target="_blank" href="https://github.com/yericoalexander"><i
+                                        class="fab fa-github"></i></a></li>
+                            <!-- Ikon GitHub dengan tautan ke profil GitHub -->
+                            <li><a target="_blank" href="https://www.linkedin.com/in/yerico-alexander"><i
+                                        class="fab fa-linkedin-in"></i></a></li>
+                            <!-- Ikon LinkedIn dengan tautan ke profil LinkedIn -->
+                            <li><a target="_blank" href="https://www.instagram.com/ricooalexanderr/"><i
+                                        class="fab fa-instagram"></i></a></li>
+                            <!-- Ikon Instagram dengan tautan ke profil Instagram -->
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-8 col-sm-12">
+                    <!-- Kolom dengan lebar berbeda sesuai ukuran layar -->
+
+                    <p class="footer-text text-center my-2">Dibuat oleh <a target="_blank"
+                            href="https://github.com/yericoalexander"> Yerico Alexander </a> | XI PPLG 6 © 2023 </p>
+                    <!-- Teks keterangan footer dengan tautan ke profil GitHub pembuatnya dan hak cipta tahun 2023 -->
+                </div>
+            </div>
+        </div>
+        <!-- Menutup kontainer kedua -->
+    </section>
+    <!-- End Footer -->
+
+    <!-- Bootstrap 5 JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <!-- berkas JavaScript Popper.js 2.9.2 dari CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <!-- berkas JavaScript Bootstrap 5 dari CDN -->
+
+    <!-- Link JS -->
+    <script src="/js/main.js"></script> <!-- berkas JavaScript dengan path '/js/main.js' ke halaman web -->
+</body>
+
+</html>

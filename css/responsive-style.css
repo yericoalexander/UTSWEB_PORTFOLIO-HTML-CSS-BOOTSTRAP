@@ -1,0 +1,112 @@
+@media (max-width: 1199.5px) {
+    /* Ketika lebar layar kurang dari atau sama dengan 1199.5px (mulai dari tablet hingga desktop kecil) */
+
+    /* Custom CSS */
+    h1 {
+        font-size: 3.75rem;
+        /* Mengganti ukuran font h1 menjadi 3.75rem */
+    }
+
+    h2 {
+        font-size: 2.1875rem;
+        /* Mengganti ukuran font h2 menjadi 2.1875rem */
+    }
+
+    h3 {
+        font-size: 1.875rem;
+        /* Mengganti ukuran font h3 menjadi 1.875rem */
+        line-height: 2.6875rem;
+        /* Mengatur tinggi baris untuk h3 */
+    }
+
+    h5 {
+        font-size: 1.0625rem;
+        /* Mengganti ukuran font h5 menjadi 1.0625rem */
+    }
+
+    /* Blog */
+}
+
+@media (max-width: 991px) {
+    /* Ketika lebar layar kurang dari atau sama dengan 991px (mulai dari tablet hingga desktop kecil) */
+
+    /* Navbar */
+    .header-scrolled {
+        height: auto;
+        /* Mengatur tinggi header menjadi otomatis saat di-scroll */
+    }
+
+    .header_wrapper .navbar-collapse {
+        margin-top: -0.125rem;
+        /* Mengatur margin atas dari elemen dengan kelas "navbar-collapse" */
+    }
+
+    .header_wrapper .menu-navbar-nav {
+        text-align: center;
+        /* Mengatur teks menu navigasi menjadi tengah */
+        background-color: var(--bg-white);
+        /* Mengganti warna latar belakang menu navigasi */
+        padding-bottom: 0.9375rem;
+        /* Mengatur padding bawah dari menu navigasi */
+    }
+
+    .header_wrapper .nav-item .nav-link {
+        margin-top: 0.9375rem;
+        /* Mengatur margin atas dari tautan menu navigasi */
+    }
+}
+
+@media (max-width: 767px) {
+    /* Ketika lebar layar kurang dari atau sama dengan 767px (mulai dari tablet hingga ponsel) */
+
+    /* Custom CSS */
+    h1 {
+        font-size: 2.5rem;
+        /* Mengganti ukuran font h1 menjadi 2.5rem */
+        line-height: 3rem;
+        /* Mengatur tinggi baris untuk h1 */
+    }
+
+    h2 {
+        font-size: 1.875rem;
+        /* Mengganti ukuran font h2 menjadi 1.875rem */
+        line-height: 2.375rem;
+        /* Mengatur tinggi baris untuk h2 */
+    }
+
+    h3 {
+        font-size: 1.5625rem;
+        /* Mengganti ukuran font h3 menjadi 1.5625rem */
+        line-height: 2.1875rem;
+        /* Mengatur tinggi baris untuk h3 */
+    }
+
+    /* About */
+    .about_wrapper .client-info:before {
+        top: 0.25rem;
+        /* Mengatur posisi atas elemen sebelumnya dalam .client-info */
+        left: 2.8125rem;
+        /* Mengatur posisi kiri elemen sebelumnya dalam .client-info */
+    }
+
+    .about_wrapper .client-info>div {
+        justify-content: center;
+        /* Mengatur justifikasi konten div dalam .client-info menjadi tengah */
+    }
+}
+
+@media (max-width: 575.5px) {
+    /* Ketika lebar layar kurang dari atau sama dengan 575.5px (mulai dari ponsel hingga ponsel kecil) */
+
+    /* Blog */
+}
+
+@media (max-width: 390px) {
+    /* Ketika lebar layar kurang dari atau sama dengan 390px (ponsel sangat kecil) */
+
+    /* Top Banner */
+    .banner_wrapper .banner-content h2::after {
+        left: 34%;
+        /* Mengatur posisi kiri pseudo-elemen setelah h2 */
+    }
+}

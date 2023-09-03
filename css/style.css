@@ -1,0 +1,525 @@
+/* Mengimpor font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+/* Pengaturan variabel root */
+:root {
+    /* Warna latar belakang */
+    --primary-color: #0023a0;
+    --secondary-color: #854fee;
+    --third-color: #0031e1;
+    --bg-white: #fff;
+    --bg-light: #faf8ff;
+    --bg-black: #000;
+    --bg-gray: #eee;
+    --gradient: linear-gradient(to right, #0023a0 0%, #1043ff 100%), radial-gradient(circle at top left, #0023a0, #1043ff);
+
+    /* Warna teks */
+    --primary-text: #0023a0;
+    --secondary-text: #854fee;
+    --third-text: #0031e1;
+    --text-white: #fff;
+    --text-black: #000;
+    --text-gray: #4e4e4e;
+
+    /* Jenis font */
+    --primary-font: 'Rubik', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+    --poppins-font: 'Poppins', sans-serif;
+}
+
+/* Pengaturan umum */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--secondary-font);
+    width: 100%;
+    background-image: url('../images/body-bg.png.webp');
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Pengaturan scroll */
+::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-gray);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+
+/* Pengaturan pada elemen "section" */
+section {
+    padding: 5rem 0;
+}
+
+/* Gaya tombol utama */
+.main-btn {
+    display: inline-block;
+    font-family: var(--poppins-font);
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 2.975rem;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.625rem 1.875rem rgba(0, 21, 255, 0.3);
+    border: double 0.125rem transparent;
+    padding: 0 2.625rem;
+    transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
+}
+
+/* Gaya tombol utama dengan latar belakang gradient */
+.primary-btn {
+    background-image: var(--gradient);
+    color: var(--text-white);
+}
+
+.primary-btn:hover {
+    border-color: var(--secondary-color);
+    background: var(--bg-white);
+    color: var(--secondary-text);
+    box-shadow: none;
+}
+
+/* Gaya tombol sekunder */
+.secondary-btn {
+    background-image: var(--bg-white);
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.secondary-btn:hover {
+    background: var(--gradient);
+    color: var(--text-white);
+    box-shadow: none;
+}
+
+/* Gaya berbagai tingkatan heading dan teks */
+h1 {
+    font-size: 4.375rem;
+    line-height: 3.75rem;
+    font-weight: 600;
+    color: var(--primary-text);
+    margin-bottom: 1.25rem;
+    font-family: var(--poppins-font);
+}
+
+h2 {
+    font-size: 2.9rem;
+    line-height: 3.4375rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: 1.5625rem;
+    font-family: var(--poppins-font);
+}
+
+h3 {
+    font-size: 3.65rem;
+    line-height: 3.125rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: 0.9375rem;
+    font-family: var(--poppins-font);
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--poppins-font);
+    color: var(--text-black);
+    margin-bottom: 0.1875rem;
+}
+
+p {
+    color: var(--text-gray);
+    font-size: 1.1rem;
+    line-height: 1.625rem;
+    font-weight: 500;
+    font-family: var(--poppins-font);
+}
+
+/* Pengaturan pada elemen Navbar */
+.header_wrapper .navbar {
+    padding: 0.9375rem 0;
+    -o-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+/* Logo di Navbar */
+.header_wrapper .navbar-brand img {
+    max-width: 10rem;
+    height: auto;
+}
+
+.header_wrapper .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.header_wrapper .nav-item {
+    margin: 0 0.625rem;
+}
+
+.header_wrapper .nav-item .nav-link {
+    font-family: var(--poppins-font);
+    font-size: 1.2rem;
+    font-weight: 650;
+    color: var(--text-black);
+    display: inline-block;
+}
+
+.header_wrapper .nav-item .nav-link.active,
+.header_wrapper .nav-item .nav-link:hover {
+    color: var(--primary-text);
+}
+
+/* Pengaturan pada elemen "header-scrolled" (Navbar yang telah di-scroll) */
+.header-scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-white);
+    -webkit-box-shadow: 0 0.25rem 0.375rem rgba(12, 0, 46, .05);
+    box-shadow: 0 0.25rem 0.375rem rgba(12, 0, 46, .05);
+}
+
+/* Pengaturan pada elemen "banner_wrapper" */
+.banner_wrapper {
+    padding-top: 6.875rem;
+    z-index: 1;
+    background-image: url('/images/home-banner.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.banner_wrapper .banner-content {
+    vertical-align: middle;
+    align-self: center;
+}
+
+.banner_wrapper .banner-content h2::after {
+    content: '';
+    width: 60%;
+    height: 0.125rem;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    background: var(--bg-black);
+    overflow-x: hidden;
+}
+
+/* About (Tentang) */
+
+/* Pengaturan gaya flex untuk elemen dengan kelas "gri" */
+.gri {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+/* Pengaturan gaya grid untuk elemen dengan kelas "about-gri" */
+.about-gri {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+    align-items: center;
+    gap: 0.275rem;
+    margin-bottom: 0.525rem;
+}
+
+/* Gaya teks untuk elemen dengan kelas "about-in" dan elemen "h5" di dalamnya */
+.about-in h5 {
+    font-size: 1.256rem;
+    font-weight: 600;
+}
+
+/* Gaya untuk elemen dengan kelas "single-logo-item" */
+.about_wrapper .single-logo-item {
+    width: 100%;
+    height: 6.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 0.0625rem solid var(--bg-gray);
+    box-shadow: none;
+    -webkit-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    -ms-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+}
+
+/* Efek hover pada elemen dengan kelas "single-logo-item" */
+.about_wrapper .single-logo-item:hover {
+    border: 0.0625rem solid transparent;
+    box-shadow: 0 0.5rem 1.875rem rgba(5, 0, 82, 0.263);
+}
+
+/* Gaya untuk elemen dengan kelas "client-info" */
+.about_wrapper .client-info {
+    padding: 1.5625rem 1.875rem;
+    background: var(--bg-light);
+    position: relative;
+    margin-top: 1.5625rem;
+}
+
+/* Efek gambar latar belakang pada elemen dengan kelas "client-info" */
+.about_wrapper .client-info::before {
+    content: '';
+    position: absolute;
+    top: -1.1625rem;
+    left: -1.4375rem;
+    background: url(/images/client-info.webp);
+    background-repeat: no-repeat;
+    height: 10.9375rem;
+    width: 12.9375rem;
+}
+
+/* Gaya untuk elemen dengan kelas "large" di dalam "client-info" */
+.about_wrapper .client-info .large {
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 6rem;
+    position: relative;
+    z-index: 9;
+    font-weight: 700;
+}
+
+/* Gaya untuk elemen dengan kelas "smll" di dalam "client-info" */
+.about_wrapper .client-info .smll {
+    text-align: left;
+    color: var(--text-black);
+    font-family: var(--primary-font);
+    font-size: 1.65rem;
+    margin-left: 1.25rem;
+    font-weight: 500;
+}
+
+/* Gaya untuk elemen dengan kelas "call-now" di dalam "client-info" */
+.about_wrapper .client-info .call-now span {
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: var(--text-black);
+}
+
+/* Gaya untuk elemen dengan kelas "call-now" di dalam "client-info" */
+.about_wrapper .client-info .call-now p {
+    color: var(--text-black);
+    text-transform: uppercase;
+    margin-bottom: 0.3125rem;
+    font-weight: 600;
+}
+
+/* Gaya untuk elemen dengan kelas "fs" di dalam "call-now" */
+.about_wrapper .client-info .call-now .fs {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+/* Services (Layanan) */
+
+/* Gaya untuk elemen dengan kelas "card" di dalam "services_wrapper" */
+.services_wrapper .card {
+    background-color: var(--bg-light);
+    cursor: pointer;
+    -webkit-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    -ms-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+}
+
+/* Efek hover pada elemen dengan kelas "card" di dalam "services_wrapper" */
+.services_wrapper .card:hover {
+    box-shadow: 0 0.9375rem 1.875rem rgba(0, 15, 227, 0.4);
+    background: var(--bg-white);
+}
+
+/* Portfolio */
+
+/* Gaya untuk elemen dengan kelas "nav-link" di dalam "portfolio_wrapper" */
+.portfolio_wrapper .nav-link {
+    font-size: 1.155rem;
+    font-weight: 600;
+    font-family: var(--poppins-font);
+    margin-right: 0.55rem;
+    color: var(--text-black);
+}
+
+/* Gaya untuk elemen dengan kelas "nav-link" yang aktif di dalam "portfolio_wrapper" */
+.portfolio_wrapper .nav-link.active {
+    color: var(--third-color);
+    background: transparent;
+}
+
+/* Gaya untuk elemen dengan kelas "portfolio-img" di dalam "portfolio_wrapper" */
+.portfolio_wrapper .portfolio-img {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Efek overlay pada elemen dengan kelas "portfolio-img" di dalam "portfolio_wrapper" */
+.overlay-p {
+    text-align: center;
+    justify-content: center;
+    font-size: 1.255rem;
+    font-family: var(--poppins-font);
+    font-weight: 600;
+    margin-top: 0.255rem;
+    color: var(--text-white);
+}
+
+/* Gaya overlay pada elemen dengan kelas "portfolio-img" di dalam "portfolio_wrapper" */
+.portfolio_wrapper .portfolio-img .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    -ms-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+}
+
+/* Efek hover pada elemen dengan kelas "portfolio-img" di dalam "portfolio_wrapper" */
+.portfolio_wrapper .portfolio-img:hover .overlay {
+    background: rgba(0, 0, 0, 0.463);
+}
+
+/* Gaya untuk elemen dengan kelas "overlay" yang berisi elemen "i" di dalam "portfolio-img" */
+.portfolio_wrapper .portfolio-img .overlay i {
+    font-size: 6.25rem;
+    color: var(--text-white);
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    -ms-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+}
+
+/* Efek hover pada elemen dengan kelas "overlay" yang berisi elemen "i" di dalam "portfolio-img" */
+.portfolio_wrapper .portfolio-img:hover .overlay i {
+    opacity: 1;
+    visibility: visible;
+    top: 50%;
+    left: 50%;
+}
+
+/* Gaya teks dengan kelas "fz" */
+.fz {
+    font-size: 1.2rem;
+}
+
+/* Contact (Kontak) */
+
+/* Gaya untuk elemen dengan kelas "newsletter" di dalam "footer_wrapper" */
+.footer_wrapper .newsletter {
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/contact-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 9.375rem 0;
+}
+
+/* Gaya untuk elemen input di dalam "footer_wrapper" */
+.footer_wrapper input {
+    line-height: 3rem;
+    padding: 0 1.5625rem;
+    border: 0.125rem solid var(--bg-white);
+    background: transparent;
+    font-weight: 400;
+    font-family: var(--poppins-font);
+    border-radius: 0.3125rem;
+    color: var(--text-white);
+}
+
+/* Efek fokus pada elemen input di dalam "footer_wrapper" */
+.footer_wrapper .form-control:focus {
+    color: var(--text-white);
+    background-color: transparent;
+    border-color: var(--bg-white);
+    outline: 0;
+    box-shadow: none;
+}
+
+/* Gaya placeholder untuk elemen input di dalam "footer_wrapper" */
+.footer_wrapper .form-control::placeholder {
+    color: var(--text-white);
+}
+
+/* Footer (Footer) */
+
+/* Gaya untuk elemen dengan kelas "footer-logo" yang berisi gambar */
+.footer_wrapper .footer-logo img {
+    max-width: 21.5rem;
+    height: auto;
+}
+
+/* Gaya untuk elemen dengan kelas "social-icons" dan elemen "li" di dalamnya */
+.footer_wrapper .social-icons li {
+    margin: 0.375rem;
+}
+
+/* Gaya tautan sosial dalam elemen "li" di dalam "social-icons" */
+.footer_wrapper .social-icons li a {
+    line-height: 1.875rem;
+    font-size: 1.5625rem;
+    display: inline-block;
+    color: var(--text-black);
+    text-align: center;
+    margin: 0 0.625rem;
+}
+
+/* Efek hover pada tautan sosial */
+.footer_wrapper .social-icons li a:hover {
+    color: var(--third-color);
+}
+
+/* Gaya teks dengan kelas "footer-text" */
+.footer_wrapper .social-icons h5 {
+    margin-bottom: 1.55rem;
+    font-family: var(--poppins-font);
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+/* Gaya teks dengan kelas "footer-text" */
+.footer_wrapper .footer-text {
+    font-size: 0.9875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+}
+
+/* Gaya tautan dalam teks dengan kelas "footer-text" */
+.footer_wrapper .footer-text a {
+    color: var(--third-color);
+}
